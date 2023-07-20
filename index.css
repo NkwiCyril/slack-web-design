@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     width: 5%;
-    margin-right: 5rem;
+    margin-right: 7rem;
 }
 
 span img {
@@ -38,7 +38,11 @@ span img {
 .navigation {
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
+    padding-right: 7rem;
+    border: 2px solid red;
 }
 
 .navigation .nav {
@@ -46,5 +50,15 @@ span img {
     line-height: 21px;
     font-size: 16px;
     display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;    
+}
+
+.search-btn {
+    display: flex;
     align-items: center;
+    width: 3%;
 }
