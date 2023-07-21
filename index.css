@@ -1,108 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
 :root {
-    --transition: all .1s ease-in;
+  --transition: all 0.1s ease-in;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid white; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
 }
 
 body {
-    background-color: #611f69;
-    overflow: hidden;
-    letter-spacing: 1px;
+  background-color: #611f69;
+  overflow: hidden;
+  letter-spacing: 1px;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  width: 7%;
+  margin-right: 5rem;
+}
+
+.logo a {
     display: flex;
     align-items: center;
-    width: 5%;
-    margin-right: 5rem;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bolder;
 }
 
-span img {
-    width: 100%;
-    
+.logo img {
+  width: 50%;
 }
+
 
 .navbar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    max-width: 100%;
-    height: 80px;
-    margin: auto  3%;
-    border-radius: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  height: 80px;
+  margin: 20px 3%;
+  border-radius: 30px;
 }
 
 .navigation {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding-right: 7rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 5rem;
 }
 
 .navigation .nav {
-    padding-right: 16px;
-    line-height: 21px;
-    font-size: 16px;
-    display: flex;
+  padding-right: 16px;
+  line-height: 21px;
+  font-size: 16px;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-parent-3:hover,
+.nav-parent-5:hover {
+  text-decoration: underline;
 }
 
 .search {
-    display: flex;
-    align-items: center;    
+  display: flex;
+  align-items: center;
 }
 
 .search-btn {
-    display: flex;
-    align-items: center;
-    width: 2%;
-    margin-right: 15px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 2%;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
+.search-btn img {
+    width: 100%;
+}
 
-.navbar a {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-right: 15px;
-    padding: 0px 10px;
-    margin: 10px auto;
-    border-radius: 5px;
+.sales-btn,
+.workspace-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-right: 15px;
+  padding: 0px 10px;
+  margin: 12px auto;
+  border-radius: 5px;
 }
 
 .sales-btn {
-    font-size: 16px;
-    color: #fff;
-    border: 1px solid #fff;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .sales-btn:hover {
-    border: 1px dashed #fff;
-    transition: var(--transition);
-    overflow: hidden;
+  border: 1px dashed #fff;
+  transition: var(--transition);
+  overflow: hidden;
 }
 
 .workspace-btn {
-    background-color: #fff;
-    color: #611f69;
-}
-
-.workspace-btn:hover {
-    border: 1px dashed #fff;
-    transition: var(--transition);
-    color: #fff;
-    background-color: transparent;
+  background-color: #fff;
+  color: #611f69;
 }
